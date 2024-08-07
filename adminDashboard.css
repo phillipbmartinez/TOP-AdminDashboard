@@ -121,7 +121,7 @@ body{
     grid-row-start: 1;
     grid-row-end: 4;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
     box-sizing: border-box;
@@ -131,4 +131,26 @@ body{
     padding: 10px;
     border-radius: 10px;
     border-left: solid 7px goldenrod;
+}
+#leftBoxOne, #leftBoxTwo, #leftBoxThree, #middleBoxOne, #middleBoxTwo, #middleBoxThree{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+}
+#leftBoxOneText, #leftBoxTwoText, #leftBoxThreeText, #middleBoxOneText, #middleBoxTwoText, #middleBoxThreeText{
+    font-size: .85rem;
+}
+#leftBoxOneTitle, #leftBoxTwoTitle, #leftBoxThreeTitle, #middleBoxOneTitle, #middleBoxTwoTitle, #middleBoxThreeTitle{
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+#leftBoxOneIcons, #leftBoxTwoIcons, #leftBoxThreeIcons, #middleBoxOneIcons, #middleBoxTwoIcons, #middleBoxThreeIcons{
+    text-align: right;
+}
+#leftBoxOneDesc, #leftBoxTwoDesc, #leftBoxThreeDesc, #middleBoxOneDesc, #middleBoxTwoDesc, #middleBoxThreeDesc{
+    margin-top: 3px;
+}
+.starIcon, .eyeIcon, .forkIcon{
+    margin-left: 5px;
+    margin-right: 5px;
 }
