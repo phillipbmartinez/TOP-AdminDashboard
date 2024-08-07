@@ -11,7 +11,7 @@ body{
     
 }
 #gridContainer div{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #leftNavbar{
     background-color: #1d4ed8;
@@ -21,50 +21,6 @@ body{
     grid-row-end: 5;
     text-align: center;
 }
-#topNavBar{
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-#leftBoxes{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 5;
-}
-#middleBoxes{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 5;
-}
-#rightBoxes{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 5;
-}
-/* #logo{
-    display: grid;
-    color: white;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    padding-left: 20px;
-}
-#logoWording{
-    margin: 0px;
-    font-size: 2rem;
-    font-weight: bold;
-} */
-/* #firstNavItems{
-        display: grid;
-        color: white;
-        grid-template-columns: auto 1fr;
-        align-items: center;
-        padding-left: 30px;
-        font-weight: bold;
-} */
 #leftNavbarInnerGrid{
     display: grid;
     color: white;
@@ -99,4 +55,80 @@ body{
 }
 #communitiesWording{
     margin-top: 48px;
+}
+#topNavBar{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid
+}
+#topNavBarInnerGrid{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+#topNavBarTop{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#topNavBarBottom{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#mainSection{
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    display: grid;
+    gap: 15px;
+    padding: 15px;
+    background-color: lightgrey;
+    box-sizing: border-box;
+}
+#leftBoxes{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    box-sizing: border-box;
+}
+#middleBoxes{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    box-sizing: border-box;
+}
+#rightBoxes{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    box-sizing: border-box;
+}
+.mainSectionBoxes{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border-left: solid 7px goldenrod;
 }
