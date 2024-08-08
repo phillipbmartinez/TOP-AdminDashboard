@@ -1,53 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="adminDashboard.css">
 </head>
+
 <body>
     <div id="gridContainer">
         <div id="leftNavbar">
             <div id="leftNavbarInnerGrid">
-                    <img class="icon" id="dashboardIcon" src="images/view-dashboard.svg">
-                    <p id="logoWording" class="wording">DASHBOARD</p>
+                <img class="icon" id="dashboardIcon" src="images/view-dashboard.svg">
+                <p id="logoWording" class="wording">DASHBOARD</p>
 
-                    <img class="icon" id="homeIcon" src="images/home.svg">
-                    <p class="wording">Home</p>
+                <img class="icon" id="homeIcon" src="images/home.svg">
+                <p class="wording">Home</p>
 
-                    <img class="icon" id="profileIcon" src="images/card-account-details-outline.svg">
-                    <p class="wording">Profile</p>
+                <img class="icon" id="profileIcon" src="images/card-account-details-outline.svg">
+                <p class="wording">Profile</p>
 
-                    <img class="icon" id="messagesIcon" src="images/message-reply.svg">
-                    <p class="wording">Messages</p>
+                <img class="icon" id="messagesIcon" src="images/message-reply.svg">
+                <p class="wording">Messages</p>
 
-                    <img class="icon" id="historyIcon" src="images/clock-time-three.svg">
-                    <p class="wording">History</p>
+                <img class="icon" id="historyIcon" src="images/clock-time-three.svg">
+                <p class="wording">History</p>
 
-                    <img class="icon" id="tasksIcon" src="images/note-multiple.svg">
-                    <p class="wording">Tasks</p>
+                <img class="icon" id="tasksIcon" src="images/note-multiple.svg">
+                <p class="wording">Tasks</p>
 
-                    <img class="icon" id="communitiesIcon" src="images/account-group.svg">
-                    <p class="wording" id="communitiesWording">Communities</p>
+                <img class="icon" id="communitiesIcon" src="images/account-group.svg">
+                <p class="wording" id="communitiesWording">Communities</p>
 
-                    <img class="icon" id="settingsIcon" src="images/cog.svg">
-                    <p>Settings</p>
+                <img class="icon" id="settingsIcon" src="images/cog.svg">
+                <p>Settings</p>
 
-                    <img class="icon" id="supportIcon" src="images/help-box.svg">
-                    <p class="wording">Support</p>
+                <img class="icon" id="supportIcon" src="images/help-box.svg">
+                <p class="wording">Support</p>
 
-                    <img class="icon" id="privacyIcon" src="images/shield-check.svg">
-                    <p class="wording">Privacy</p>
+                <img class="icon" id="privacyIcon" src="images/shield-check.svg">
+                <p class="wording">Privacy</p>
             </div>
         </div>
         <div id="topNavBar">
             <div id="topNavBarInnerGrid">
-                <div id="topNavBarTop"></div>
-                <div id="topNavBarBottom"></div>
+                <div id="topNavBarTop">
+                    <div id="searchBarContainer">
+                        <div id="searchIcon">
+                            <img src="images/magnify.svg">
+                        </div>
+                        <div id="searchBar">
+                            <input id="searchText">
+                        </div>
+                    </div>
+                    <div id="userAlerts">
+                        <div id="topRightContainer">
+                            <img src="images/bell-ring-outline.svg">
+                        </div>
+                        <div id="topRightContainer2">
+                            <img id="mainUserAvatar" class="trendingAvatars" src="images/Head_shot.jpg"
+                                alt="Head shot avatar"><span id="userName">Phillip Martinez</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="topNavBarBottom">
+                    <div id="userWelcome">
+                        <div id="largeUserAvatarContainer">
+                            <img id="largeUserAvatar" src="images/Head_shot.jpg" alt="Head shot avatar">
+                        </div>
+                        <div id="userNameText">
+                            <p id="hiThereText">Hi there,</p>
+                            <p id="userNameAndHandle">Phillip Martinez (@pmartinez)</p>
+                        </div>
+                    </div>
+                    <div id="buttonsContainer">
+                        <button id="newButton" class="TopNavButtons">New</button>
+                        <button id="uploadButton" class="TopNavButtons">Upload</button>
+                        <button id="shareButton" class="TopNavButtons">Share</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="mainSection">
@@ -55,34 +92,37 @@
                 <div id="leftBoxOne" class="mainSectionBoxes">
                     <div id="leftBoxOneText">
                         <p id="leftBoxOneTitle">Super Cool Project</p>
-                        <p id="leftBoxOneDesc">Nostrum, accusantium ullam id soluta nobis magni adipisci ducimus quos numquam excepturi minus possimus enim consequuntur sunt illo iusto.</p>
+                        <p id="leftBoxOneDesc">Nostrum, accusantium ullam id soluta nobis magni adipisci ducimus quos
+                            numquam excepturi minus possimus enim consequuntur sunt illo iusto.</p>
                     </div>
                     <div id="leftBoxOneIcons">
                         <img class="starIcon" src="images/star-plus-outline.svg">
                         <img class="eyeIcon" src="images/eye-plus-outline.svg">
-                        <img class="forkIcon" src="images/source-fork.svg">                    
+                        <img class="forkIcon" src="images/source-fork.svg">
                     </div>
                 </div>
                 <div id="leftBoxTwo" class="mainSectionBoxes">
                     <div id="leftBoxTwoText">
                         <p id="leftBoxTwoTitle">Impossible Project</p>
-                        <p id="leftBoxTwoDesc">Nostrum, accusantium ullam id soluta nobis magni adipisci ducimus quos numquam excepturi minus possimus enim consequuntur sunt illo iusto.</p>
+                        <p id="leftBoxTwoDesc">Nostrum, accusantium ullam id soluta nobis magni adipisci ducimus quos
+                            numquam excepturi minus possimus enim consequuntur sunt illo iusto.</p>
                     </div>
                     <div id="leftBoxTwoIcons">
                         <img class="starIcon" src="images/star-plus-outline.svg">
                         <img class="eyeIcon" src="images/eye-plus-outline.svg">
-                        <img class="forkIcon" src="images/source-fork.svg">                    
+                        <img class="forkIcon" src="images/source-fork.svg">
                     </div>
                 </div>
                 <div id="leftBoxThree" class="mainSectionBoxes">
                     <div id="leftBoxThreeText">
                         <p id="leftBoxThreeTitle">Ad Blocker</p>
-                        <p id="leftBoxThreeDesc">Nostrum, accusantium ullam id soluta nobis magni adipisci ducimus quos numquam excepturi minus possimus enim consequuntur sunt illo iusto.</p>
+                        <p id="leftBoxThreeDesc">Nostrum, accusantium ullam id soluta nobis magni adipisci ducimus quos
+                            numquam excepturi minus possimus enim consequuntur sunt illo iusto.</p>
                     </div>
                     <div id="leftBoxThreeIcons">
                         <img class="starIcon" src="images/star-plus-outline.svg">
                         <img class="eyeIcon" src="images/eye-plus-outline.svg">
-                        <img class="forkIcon" src="images/source-fork.svg">                    
+                        <img class="forkIcon" src="images/source-fork.svg">
                     </div>
                 </div>
             </div>
@@ -90,34 +130,37 @@
                 <div id="middleBoxOne" class="mainSectionBoxes">
                     <div id="middleBoxOneText">
                         <p id="middleBoxOneTitle">Ad Blocker</p>
-                        <p id="middleBoxOneDesc">Nostrum, accusantium ullam id soluta nobis magni adipisci ducimus quos numquam excepturi minus possimus enim consequuntur sunt illo iusto.</p>
+                        <p id="middleBoxOneDesc">Nostrum, accusantium ullam id soluta nobis magni adipisci ducimus quos
+                            numquam excepturi minus possimus enim consequuntur sunt illo iusto.</p>
                     </div>
                     <div id="middleBoxOneIcons">
                         <img class="starIcon" src="images/star-plus-outline.svg">
                         <img class="eyeIcon" src="images/eye-plus-outline.svg">
-                        <img class="forkIcon" src="images/source-fork.svg">                    
+                        <img class="forkIcon" src="images/source-fork.svg">
                     </div>
                 </div>
                 <div id="middleBoxTwo" class="mainSectionBoxes">
                     <div id="middleBoxTwoText">
                         <p id="middleBoxTwoTitle">Ad Blocker</p>
-                        <p id="middleBoxTwoDesc">Nostrum, accusantium ullam id soluta nobis magni adipisci ducimus quos numquam excepturi minus possimus enim consequuntur sunt illo iusto.</p>
+                        <p id="middleBoxTwoDesc">Nostrum, accusantium ullam id soluta nobis magni adipisci ducimus quos
+                            numquam excepturi minus possimus enim consequuntur sunt illo iusto.</p>
                     </div>
                     <div id="middleBoxTwoIcons">
                         <img class="starIcon" src="images/star-plus-outline.svg">
                         <img class="eyeIcon" src="images/eye-plus-outline.svg">
-                        <img class="forkIcon" src="images/source-fork.svg">                    
+                        <img class="forkIcon" src="images/source-fork.svg">
                     </div>
                 </div>
                 <div id="middleBoxThree" class="mainSectionBoxes">
                     <div id="middleBoxThreeText">
                         <p id="middleBoxThreeTitle">Ad Blocker</p>
-                        <p id="middleBoxThreeDesc">Nostrum, accusantium ullam id soluta nobis magni adipisci ducimus quos numquam excepturi minus possimus enim consequuntur sunt illo iusto.</p>
+                        <p id="middleBoxThreeDesc">Nostrum, accusantium ullam id soluta nobis magni adipisci ducimus
+                            quos numquam excepturi minus possimus enim consequuntur sunt illo iusto.</p>
                     </div>
                     <div id="middleBoxThreeIcons">
                         <img class="starIcon" src="images/star-plus-outline.svg">
                         <img class="eyeIcon" src="images/eye-plus-outline.svg">
-                        <img class="forkIcon" src="images/source-fork.svg">                    
+                        <img class="forkIcon" src="images/source-fork.svg">
                     </div>
                 </div>
             </div>
@@ -142,7 +185,8 @@
                 </div>
                 <div id="rightBoxTwo" class="mainSectionBoxes">
                     <div class="trending" id="trendingOneAvatarContainer">
-                        <img id="trendingOneAvatar" class="trendingAvatars" src="images/Head_shot.jpg" alt="Head shot avatar">
+                        <img id="trendingOneAvatar" class="trendingAvatars" src="images/Head_shot.jpg"
+                            alt="Head shot avatar">
                     </div>
                     <div id="trendingOneTextContainer">
                         <p class="user">@tegan</p>
@@ -150,7 +194,8 @@
                     </div>
 
                     <div class="trending" id="trendingTwoAvatarContainer">
-                        <img id="trendingTwoAvatar" class="trendingAvatars" src="images/Head_shot.jpg" alt="Head shot avatar">
+                        <img id="trendingTwoAvatar" class="trendingAvatars" src="images/Head_shot.jpg"
+                            alt="Head shot avatar">
                     </div>
                     <div id="trendingTwoTextContainer">
                         <p class="user">@morgan</p>
@@ -158,7 +203,8 @@
                     </div>
 
                     <div class="trending" id="trendingThreeAvatarContainer">
-                        <img id="trendingThreeAvatar" class="trendingAvatars" src="images/Head_shot.jpg" alt="Head shot avatar">
+                        <img id="trendingThreeAvatar" class="trendingAvatars" src="images/Head_shot.jpg"
+                            alt="Head shot avatar">
                     </div>
                     <div id="trendingThreeTextContainer">
                         <p class="user">@kendail</p>
@@ -166,7 +212,8 @@
                     </div>
 
                     <div class="trending" id="trendingFourAvatarContainer">
-                        <img id="trendingFourAvatar" class="trendingAvatars" src="images/Head_shot.jpg" alt="Head shot avatar">
+                        <img id="trendingFourAvatar" class="trendingAvatars" src="images/Head_shot.jpg"
+                            alt="Head shot avatar">
                     </div>
                     <div id="trendingFourTextContainer">
                         <p class="user">@alex</p>
@@ -178,4 +225,5 @@
 
     </div>
 </body>
+
 </html>
