@@ -11,7 +11,7 @@ body{
     
 }
 #gridContainer div{
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 #leftNavbar{
     background-color: #1d4ed8;
@@ -34,6 +34,9 @@ body{
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+}
+#icon:hover{
+    box-shadow: 5px 5px 11px black;
 }
 #wording{
     grid-column-start: 2;
@@ -136,6 +139,7 @@ body{
     display: grid;
     grid-template-rows: 1fr auto;
     grid-template-columns: 1fr;
+    box-shadow: 1px 1px 5px grey;
 }
 #leftBoxOneText, #leftBoxTwoText, #leftBoxThreeText, #middleBoxOneText, #middleBoxTwoText, #middleBoxThreeText{
     font-size: .85rem;
@@ -153,4 +157,100 @@ body{
 .starIcon, .eyeIcon, .forkIcon{
     margin-left: 5px;
     margin-right: 5px;
+}
+#rightBoxOne{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    font-size: .85rem;
+}
+.rightBoxesTopTitle{
+    font-weight: bold;
+    margin-bottom: 3px;
+    
+}
+.rightBoxesTopText{
+    margin-top: 3px;
+    padding-bottom: 10px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid gray;
+}
+#rightBoxTwo{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    box-shadow: 1px 1px 5px grey;
+}
+.trendingAvatars{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+#trendingOneAvatarContainer{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+}
+#trendingTwoAvatarContainer{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+#trendingThreeAvatarContainer{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+}
+#trendingFourAvatarContainer{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+}
+#trendingOneTextContainer{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: left;
+}
+#trendingTwoTextContainer{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: left;
+}
+#trendingThreeTextContainer{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: left;
+}
+#trendingFourTextContainer{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: left;
+}
+.user{
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: .85rem;
+}
+.userLine{
+    margin-top: 3px;
+    margin-bottom: 10px;
+    font-size: .85rem;
 }
